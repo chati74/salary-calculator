@@ -53,7 +53,7 @@ calSalary.prototype.PushEmployee = function (Name, Rank, WorkHour, OvertimeHour,
         if (WorkHour === null || WorkHour === undefined) {
             WorkHour = 0;
         }
-        if (OverTimeHour === null || OverTimeHour === undefined) {
+        if (OvertimeHour === null || OvertimeHour === undefined) {
             OvertimeHour = 0;
         }
         if (SalaryRate === null || SalaryRate === undefined) {
@@ -66,7 +66,7 @@ calSalary.prototype.PushEmployee = function (Name, Rank, WorkHour, OvertimeHour,
         this.name[this.empIndex] = Name;
         this.empRank[this.empIndex] = Rank;
         this.workHour[this.empIndex] = WorkHour;
-        this.overtimeHour[this.empIndex] = OverTimeHour;
+        this.overtimeHour[this.empIndex] = OvertimeHour;
         this.salaryRate[this.empIndex] = SalaryRate;
         this.empIndex++;
     }
